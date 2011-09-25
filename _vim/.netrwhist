@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/pankajm/prog/django-backbone-example/backbone_example/tweets/templatetags'
+let g:netrw_dirhist_2='/home/pankajm/prog/donut/library'
+let g:netrw_dirhist_3='/home/pankajm/prog/celery'
+let g:netrw_dirhist_4='/home/pankajm/prog/celery/celery/backends'
+let g:netrw_dirhist_5='/home/pankajm/prog/celery'
+let g:netrw_dirhist_6='/home/pankajm/.darcs'
+let g:netrw_dirhist_7='/home/pankajm/.emacs.d'
