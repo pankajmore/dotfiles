@@ -323,9 +323,9 @@ myKeys = [ ("M-d"                   , spawn "python2 /home/pankajm/dmenu-python/
 --         , ("<XF86HomePage>"       , myBroswer          )
          , ("M-e"                  , myEject            ) -- open/close tray 
          , ("<XF86ScreenSaver>"      , spawn "i3lock -d -c 000000") -- W-l to lock screen
-         , ("M-l"                    , spawn "xlock -mode matrix") -- W-l to lock screen
-         , ("M-i"                  , myIRC              ) -- open/attach IRC client in screen
---         , ("M-r"                  , myTorrents         ) -- open/attach rtorrent in screen 
+         , ("M-S-l"                    , spawn "xlock -mode matrix") -- W-l to lock screen
+         , ("M-S-i"                  , myIRC              ) -- open/attach IRC client in screen
+         , ("M-S-r"                  , myTorrents         ) -- open/attach rtorrent in screen 
 --		 , ("M-f"					, spawn "pcmanfm"	 )
          -- some custom hotkeys
          , ("M-g"                   , spawn "~/bin/goodsong.sh"   ) -- note current song as 'good'
@@ -391,7 +391,7 @@ myKeys = [ ("M-d"                   , spawn "python2 /home/pankajm/dmenu-python/
 
         -- see http://pbrisbin.com:8080/pages/screen_tricks.html
         myIRC      = spawnInScreen "irssi"
---        myTorrents = spawnInScreen "rtorrent"
+        myTorrents = spawnInScreen "rtorrent"
 
         spawnInScreen s = spawn $ unwords [ myTerminal, "-title", s, "-e bash -cl", command s ]
 
