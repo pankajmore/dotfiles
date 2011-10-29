@@ -1,0 +1,15 @@
+###
+ # gmx specific options
+ ###
+
+ color status cyan default
+
+ set from      = "pankajm@iitk.ac.in"
+ set sendmail  = "/usr/bin/msmtp -a iitk"
+ set mbox      = "+iitk/Archive"
+ set record    = "+iitk/Sent"
+ set postponed = "+iitk/Drafts"
+
+ macro index E "<change-folder>+iitk/Archive<enter><limit>~B " "search everything"
+ macro index D "<save-message>+iitk/Trash<enter>"              "move message to the trash"
+ macro index S "<save-message>+iitk/Spam<enter>"               "mark message as spam"
